@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>ir_effect.ml &mdash; Coverage report</title>
+    <meta name="description" content="98.11% coverage in ir_def/ir_effect.ml">
+    <link rel="stylesheet" href="../coverage.css"/>
+    <script src="../highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <div id="header">
+      <h1>
+        <a href="../index.html">
+          <span class="dirname">ir_def/</span>ir_effect.ml
+        </a>
+      </h1>
+      <h2>98.11%</h2>
+    </div>
+    <div id="navbar">
+      <span class="unvisited" style="bottom:25.00%"></span>
+    </div>
+    <div id="report">
+      <div id="lines-layer">
+        <pre>
+<a id="L1"></a><span > </span>
+<a id="L2"></a><span > </span>
+<a id="L3"></a><span > </span>
+<a id="L4"></a><span > </span>
+<a id="L5"></a><span > </span>
+<a id="L6"></a><span > </span>
+<a id="L7"></a><span > </span>
+<a id="L8"></a><span > </span>
+<a id="L9"></a><span > </span>
+<a id="L10"></a><span > </span>
+<a id="L11"></a><span class="visited"> </span>
+<a id="L12"></a><span class="visited"> </span>
+<a id="L13"></a><span class="visited"> </span>
+<a id="L14"></a><span class="visited"> </span>
+<a id="L15"></a><span > </span>
+<a id="L16"></a><span class="visited"> </span>
+<a id="L17"></a><span class="visited"> </span>
+<a id="L18"></a><span > </span>
+<a id="L19"></a><span class="visited"> </span>
+<a id="L20"></a><span > </span>
+<a id="L21"></a><span class="visited"> </span>
+<a id="L22"></a><span > </span>
+<a id="L23"></a><span > </span>
+<a id="L24"></a><span > </span>
+<a id="L25"></a><span class="visited"> </span>
+<a id="L26"></a><span class="visited"> </span>
+<a id="L27"></a><span > </span>
+<a id="L28"></a><span > </span>
+<a id="L29"></a><span class="visited"> </span>
+<a id="L30"></a><span class="visited"> </span>
+<a id="L31"></a><span class="visited"> </span>
+<a id="L32"></a><span > </span>
+<a id="L33"></a><span class="visited"> </span>
+<a id="L34"></a><span class="visited"> </span>
+<a id="L35"></a><span class="visited"> </span>
+<a id="L36"></a><span > </span>
+<a id="L37"></a><span class="visited"> </span>
+<a id="L38"></a><span > </span>
+<a id="L39"></a><span class="visited"> </span>
+<a id="L40"></a><span class="visited"> </span>
+<a id="L41"></a><span > </span>
+<a id="L42"></a><span class="visited"> </span>
+<a id="L43"></a><span class="visited"> </span>
+<a id="L44"></a><span > </span>
+<a id="L45"></a><span class="visited"> </span>
+<a id="L46"></a><span class="visited"> </span>
+<a id="L47"></a><span class="visited"> </span>
+<a id="L48"></a><span class="visited"> </span>
+<a id="L49"></a><span > </span>
+<a id="L50"></a><span class="visited"> </span>
+<a id="L51"></a><span class="visited"> </span>
+<a id="L52"></a><span class="visited"> </span>
+<a id="L53"></a><span > </span>
+<a id="L54"></a><span class="visited"> </span>
+<a id="L55"></a><span > </span>
+<a id="L56"></a><span class="visited"> </span>
+<a id="L57"></a><span > </span>
+<a id="L58"></a><span class="visited"> </span>
+<a id="L59"></a><span > </span>
+<a id="L60"></a><span class="visited"> </span>
+<a id="L61"></a><span > </span>
+<a id="L62"></a><span class="visited"> </span>
+<a id="L63"></a><span > </span>
+<a id="L64"></a><span class="visited"> </span>
+<a id="L65"></a><span class="visited"> </span>
+<a id="L66"></a><span class="unvisited"> </span>
+<a id="L67"></a><span > </span>
+<a id="L68"></a><span class="visited"> </span>
+<a id="L69"></a><span > </span>
+<a id="L70"></a><span > </span>
+<a id="L71"></a><span > </span>
+<a id="L72"></a><span class="visited"> </span>
+<a id="L73"></a><span class="visited"> </span>
+<a id="L74"></a><span > </span>
+<a id="L75"></a><span class="visited"> </span>
+<a id="L76"></a><span > </span>
+<a id="L77"></a><span class="visited"> </span>
+<a id="L78"></a><span > </span>
+<a id="L79"></a><span class="visited"> </span>
+<a id="L80"></a><span class="visited"> </span>
+<a id="L81"></a><span class="visited"> </span>
+<a id="L82"></a><span > </span>
+<a id="L83"></a><span > </span>
+<a id="L84"></a><span > </span>
+<a id="L85"></a><span > </span>
+<a id="L86"></a><span > </span>
+<a id="L87"></a><span class="visited"> </span>
+<a id="L88"></a><span class="visited"> </span>
+</pre>
+      </div>
+      <div id="text-layer">
+        <pre id="line-numbers">
+<a href="#L1"> 1</a>
+<a href="#L2"> 2</a>
+<a href="#L3"> 3</a>
+<a href="#L4"> 4</a>
+<a href="#L5"> 5</a>
+<a href="#L6"> 6</a>
+<a href="#L7"> 7</a>
+<a href="#L8"> 8</a>
+<a href="#L9"> 9</a>
+<a href="#L10">10</a>
+<a href="#L11">11</a>
+<a href="#L12">12</a>
+<a href="#L13">13</a>
+<a href="#L14">14</a>
+<a href="#L15">15</a>
+<a href="#L16">16</a>
+<a href="#L17">17</a>
+<a href="#L18">18</a>
+<a href="#L19">19</a>
+<a href="#L20">20</a>
+<a href="#L21">21</a>
+<a href="#L22">22</a>
+<a href="#L23">23</a>
+<a href="#L24">24</a>
+<a href="#L25">25</a>
+<a href="#L26">26</a>
+<a href="#L27">27</a>
+<a href="#L28">28</a>
+<a href="#L29">29</a>
+<a href="#L30">30</a>
+<a href="#L31">31</a>
+<a href="#L32">32</a>
+<a href="#L33">33</a>
+<a href="#L34">34</a>
+<a href="#L35">35</a>
+<a href="#L36">36</a>
+<a href="#L37">37</a>
+<a href="#L38">38</a>
+<a href="#L39">39</a>
+<a href="#L40">40</a>
+<a href="#L41">41</a>
+<a href="#L42">42</a>
+<a href="#L43">43</a>
+<a href="#L44">44</a>
+<a href="#L45">45</a>
+<a href="#L46">46</a>
+<a href="#L47">47</a>
+<a href="#L48">48</a>
+<a href="#L49">49</a>
+<a href="#L50">50</a>
+<a href="#L51">51</a>
+<a href="#L52">52</a>
+<a href="#L53">53</a>
+<a href="#L54">54</a>
+<a href="#L55">55</a>
+<a href="#L56">56</a>
+<a href="#L57">57</a>
+<a href="#L58">58</a>
+<a href="#L59">59</a>
+<a href="#L60">60</a>
+<a href="#L61">61</a>
+<a href="#L62">62</a>
+<a href="#L63">63</a>
+<a href="#L64">64</a>
+<a href="#L65">65</a>
+<a href="#L66">66</a>
+<a href="#L67">67</a>
+<a href="#L68">68</a>
+<a href="#L69">69</a>
+<a href="#L70">70</a>
+<a href="#L71">71</a>
+<a href="#L72">72</a>
+<a href="#L73">73</a>
+<a href="#L74">74</a>
+<a href="#L75">75</a>
+<a href="#L76">76</a>
+<a href="#L77">77</a>
+<a href="#L78">78</a>
+<a href="#L79">79</a>
+<a href="#L80">80</a>
+<a href="#L81">81</a>
+<a href="#L82">82</a>
+<a href="#L83">83</a>
+<a href="#L84">84</a>
+<a href="#L85">85</a>
+<a href="#L86">86</a>
+<a href="#L87">87</a>
+<a href="#L88">88</a>
+</pre>
+<pre><code class="ocaml">open Ir
+open Source
+module T = Mo_types.Type
+
+(* a simple effect analysis to annote expressions as Triv(ial) (await-free) or Await (containing unprotected awaits) *)
+
+(* in future we could merge this with the type-checker
+   but I prefer to keep it mostly separate for now *)
+
+let max_eff e1 e2 =
+  <span data-count="5120586">m</span>atch e1,e2 with
+  | <span data-count="5089646">T</span>.Triv, T.Triv -&gt; T.Triv
+  | <span data-count="12569">_</span> , T.Await -&gt; T.Await
+  | <span data-count="18371">T</span>.Await, _ -&gt; T.Await
+
+let typ phrase = <span data-count="13858171">p</span>hrase.note.Note.typ
+let eff phrase = <span data-count="13856861">p</span>hrase.note.Note.eff
+
+let is_triv phrase = <span data-count="7731">e</span>f<span data-count="7731">f</span> phrase = T.Triv
+
+let effect_exp (exp: exp) : T.eff = <span data-count="5670157">e</span>ff exp
+
+(* infer the effect of an expression, assuming all sub-expressions are correctly effect-annotated es*)
+let rec infer_effect_prim = function
+  | <span data-count="168">T</span>hrowPrim | <span data-count="11764">A</span>waitPrim -&gt; T.Await
+  | <span data-count="2278599">_</span> -&gt; T.Triv
+
+ and infer_effect_exp (exp: exp) : T.eff =
+  <span data-count="6978091">m</span>atch exp.it with
+  | <span data-count="2185070">V</span>arE _
+  | <span data-count="654274">L</span>itE _ -&gt;
+    T.Triv
+  | <span data-count="34718">L</span>abelE (_, _, exp1)
+  | <span data-count="36728">L</span>oopE exp1
+  | <span data-count="200106">A</span>ssignE (_, exp1) -&gt;
+    effect_exp exp1
+  | <span data-count="2290531">P</span>rimE (p, exps) -&gt;
+    let es = List.map effect_exp exps in
+    <span data-count="2290531">L</span>ist.fold_left max_eff (infer_effect_pri<span data-count="2290531">m</span> p) es
+  | <span data-count="348001">B</span>lockE (ds, exp) -&gt;
+    let es = List.map effect_dec ds in
+    <span data-count="348001">L</span>ist.fold_left max_eff (effect_ex<span data-count="348001">p</span> exp) es
+  | <span data-count="140795">I</span>fE (exp1, exp2, exp3) -&gt;
+    let e1 = effect_exp exp1 in
+    <span data-count="140795">l</span>et e2 = effect_exp exp2 in
+    <span data-count="140795">l</span>et e3 = effect_exp exp3 in
+    <span data-count="140795">m</span>ax_eff e1 (max_ef<span data-count="140795">f</span> e2 e3)
+  | <span data-count="56601">S</span>witchE (exp1, cases) -&gt;
+    let e1 = effect_exp exp1 in
+    <span data-count="56601">l</span>et e2 = effect_cases cases in
+    <span data-count="56601">m</span>ax_eff e1 e2
+  | <span data-count="12660">A</span>syncE _ -&gt;
+    T.Triv
+  | <span data-count="768">T</span>ryE _ -&gt;
+    T.Await
+  | <span data-count="11756">D</span>eclareE (_, _, exp1) -&gt;
+    effect_exp exp1
+  | <span data-count="11756">D</span>efineE (_, _, exp1) -&gt;
+    effect_exp exp1
+  | <span data-count="915031">F</span>uncE _ -&gt;
+    T.Triv
+  | <span data-count="13800">S</span>elfCallE (_, _, exp1, exp2) -&gt;
+    let e1 = effect_exp exp1 in
+    <span data-count="13800">l</span>et e2 = effect_exp exp2 in
+    <span data-count="13800">m</span>ax_eff e1 e2
+  | <span data-count="0">A</span>ctorE _ -&gt;
+    T.Triv
+  | <span data-count="65496">N</span>ewObjE _ -&gt;
+    T.Triv
+
+and effect_cases cases =
+  <span data-count="177133">m</span>atch cases with
+  | <span data-count="56601">[</span>] -&gt;
+    T.Triv
+  | <span data-count="120532">{</span>it = {pat; exp}; _}::cases' -&gt;
+    let e = effect_exp exp in
+    <span data-count="120532">m</span>ax_eff e (effect_case<span data-count="120532">s</span> cases')
+
+and effect_dec dec = <span data-count="1198850">m</span>atch dec.it with
+  | <span data-count="1093096">L</span>etD (_, e) | <span data-count="105738">V</span>arD (_, _, e) -&gt; effect_exp e
+  | <span data-count="16">R</span>efD (_, _, { it = DotLE (e, _); _ }) -&gt; effect_exp e
+  | RefD (_, _, _) -&gt; assert false
+
+let infer_effect_dec = effect_dec
+
+let infer_effect_decs ds =
+  <span data-count="285">l</span>et es = List.map effect_dec ds in
+  <span data-count="285">L</span>ist.fold_left max_eff T.Triv es
+</code></pre>
+      </div>
+    </div>
+    <script src="../coverage.js"></script>
+  </body>
+</html>
